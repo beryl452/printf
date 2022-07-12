@@ -82,3 +82,17 @@ int print_percent(__attribute((unused))va_list list)
 	_putchar('%');
 	return (1);
 }
+
+/**
+ * print-integer - Prints an integer
+ * @list: list of arguments
+ *
+ * Return: a count of the numbers
+ */
+int print_integer(va_list list)
+{
+	int len;
+
+	len = print_number(list);
+	return (len);
+}

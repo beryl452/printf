@@ -24,5 +24,6 @@ int get_print(const char *format, convert func_list[], va_list arg_list);
 int print_char(va_list list);
 int print_string(va_list list);
 int print_percent(va_list);
+int print_integer(va_list);
 
 #endif /* MAIN_H */
