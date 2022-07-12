@@ -8,7 +8,7 @@
  * Return: Number of characters printed
  */
 int _printf(const char *format, ...)
-{	
+{
 	int arg = 0;
 	convert func_list[] = {
 		{"c", print_char},
