@@ -84,7 +84,7 @@ int print_percent(__attribute((unused))va_list list)
 }
 
 /**
- * print-integer - Prints an integer
+ * print_integer - Prints an integer
  * @list: list of arguments
  *
  * Return: a count of the numbers
