@@ -18,7 +18,7 @@ int _printf(const char *format, ...)
 		if (format[i] == '%')
 		{
 			if (format[i + 1] == 'c')
-				_putchar(va_arg(args, int));
+				_putchar(va_arg(ap, int));
 			i++;
 		}
 		else
