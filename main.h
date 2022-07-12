@@ -8,7 +8,7 @@
 
 /**
  * struct convert - Struct for formats and functions
- * @f: the format
+ * @fm: the format
  * @func: Pointer to function
  */
 typedef struct convert
