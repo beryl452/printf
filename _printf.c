@@ -9,22 +9,17 @@
  */
 int _printf(const char *format, ...)
 {	
-	int i = 0;
+	int arg = 0;
+	convert func_list[] = {
+		{"c", print_char},
+		{"s", print_string},
+		{"%", print_percent},
+		{NULL, NULL}
+	};
 	va_list ap;
 
 	va_start(ap, format);
-	while (format[i])
-	{
-		if (format[i] == '%')
-		{
-			if (format[i + 1] == 'c')
-				_putchar(va_arg(ap, int));
-			i++;
-		}
-		else
-			_putchar(format[i]);
-		i++;	
-	}
+	arg = get_print(format, func_list, ap);
 	va_end(ap);
-	return (0);
+	return (arg);
 }

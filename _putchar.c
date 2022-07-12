@@ -3,8 +3,10 @@
 /**
  * _putchar - print the character @c
  * @c: Character to print 
+ *
+ * Return: 1 if success and -1 Otherwise
  */
-void _putchar(char c)
+int _putchar(char c)
 {
-	write(1, &c, 1);
+	return (write(1, &c, 1));
 }
